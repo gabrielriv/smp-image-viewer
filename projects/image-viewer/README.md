@@ -2,6 +2,10 @@
 
 `smp-image-viewer` is an NPM component designed to display images responsively with different viewing modes. It allows you to adjust the image within a container without distortion, ensuring an optimal presentation on any device. Additionally, it includes an option to view the image in full screen and a fallback image in case the original one fails to load.
 
+## Demo
+
+You can view a live demo of the component [here](https://fir-smp-image-viewer.web.app/).
+
 ## Installation
 
 You can install the package via npm:

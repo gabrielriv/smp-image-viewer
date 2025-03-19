@@ -14,8 +14,12 @@
   {
     "email": "gabrielrivh@gmail.com",
     "name": "Gabriel Eduardo Rivero Hernández",
-    "url": ""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielriv/smp-image-viewer/tree/main/projects/image-viewer"
+  },
+  "homepage": "https://fir-smp-image-viewer.web.app/",
   "description": "Responsive image viewer that adapts to different container sizes and multiple display styles.",
   "keywords":
   [
