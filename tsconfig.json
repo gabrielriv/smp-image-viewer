@@ -15,6 +15,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
+    "paths": {
+      "image-viewer": [
+        "./dist/image-viewer"
+      ],
+      "smp-image-viewer": [
+        "./dist/smp-image-viewer"
+      ]
+    },
     "target": "ES2022",
     "module": "ES2022"
   },

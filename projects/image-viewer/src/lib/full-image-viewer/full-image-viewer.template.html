@@ -1,0 +1,15 @@
+<div class="fullImage__panel" *ngIf="opened || openedFirstTime" [hidden]="!opened">
+
+  <div class="fullImage__panel__backdrop" (click)="CloseModal()"></div>
+
+  <div class="fullImage__panel__image animated {{animation}}" [hidden]="!loaded" (click)="ClickImageContainer($event)">
+    <img [src]="src" [ngClass]="{'fullImage__panel__image--portrait': height > width}" (load)="ImageLoaded()" #fullImage alt=""/>
+  </div>
+
+  <div class="fullImage__panel__times" (click)="CloseModal()">
+    <div class="fullImage__panel__times__button">
+      <span>&times;</span>
+    </div>
+  </div>
+
+</div>

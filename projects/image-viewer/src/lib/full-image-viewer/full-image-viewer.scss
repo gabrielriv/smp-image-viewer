@@ -1,0 +1,78 @@
+$backdrop: rgba(0, 0, 0, 0.5);
+
+.fullImage
+{
+  &__panel
+  {
+    &__backdrop
+    {
+      background: $backdrop;
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      z-index: 2000;
+    }
+
+    &__image
+    {
+      position: fixed;
+      z-index: 2000;
+
+      height: 90%;
+      width: 90%;
+
+      top: 5%;
+      bottom: 5%;
+
+      left: 5%;
+      right: 5%;
+
+      background: transparent;
+
+      > img
+      {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }
+
+      &--portrait
+      {
+        width: auto;
+      }
+    }
+
+    &__times
+    {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 2000;
+
+      &__button
+      {
+        height: 40px;
+        width: 40px;
+        background: transparent;
+        color: white;
+        font-size: 60px;
+        text-align: center;
+
+        &:hover
+        {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

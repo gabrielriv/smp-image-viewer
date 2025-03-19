@@ -1,0 +1,14 @@
+<div class="imageContainer" [ngStyle]="{'width': width, 'height': height}" [ngClass]="{'imageContainer--detail': fullImage && !noImage}" id="imageDiv{{id}}"
+      #imageContainer>
+
+  <img *ngIf="!noImage" [id]="'imageViewer' + id" [src]="src" class="imageContainer__image {{alignmentClass}} imageContainer__image--{{position}}" [hidden]="!imageLoaded" [ngStyle]="{'border-radius': borderRadius + 'px'}"
+       (load)="ImageLoaded()" (error)="LoadError()" alt="{{alt}}"
+       (click)="OpenFullImageViewer()" #imageElement/>
+
+
+  <img *ngIf="noImage && noImageVisible" [id]="'noImage' + id" [src]="noImageSRC" class="imageContainer__image {{alignmentClass}} imageContainer__image--{{position}}" [ngStyle]="{'border-radius': borderRadius + 'px'}" [hidden]="!imageLoaded"
+       (load)="NoImageLoaded()" alt="" #noImageElement/>
+
+</div>
+
+<smp-full-image-viewer [src]="src" *ngIf="fullImage && !noImage" #fullImageViewer></smp-full-image-viewer>

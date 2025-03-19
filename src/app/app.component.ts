@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {ShowCaseComponent} from './show-case/show-case.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ShowCaseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
